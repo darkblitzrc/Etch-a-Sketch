@@ -7,11 +7,17 @@ let gridSlider = function(){
     return parseInt(x)
 }
 
+let colorPicker = function(){
+    y = document.getElementById('colorpicked').value;
+    return y
+}
+
+let gridSizeText = document.querySelector('.grid-text')
 
 let divGenerator = function(){
     gridSize = gridSlider();
     divNumber = gridSize*gridSize
-    divWidth = (800/gridSize - 2)
+    divWidth = (600/gridSize - 2)
     for (let i = 0; i < divNumber; i++){
         div = document.createElement('div');
         div.className = 'square'
@@ -32,8 +38,9 @@ slider.addEventListener('mouseup', function(){
     let squareList = Array.from(square);
     squareList.forEach(square =>{
         square.addEventListener('mouseover', function(){
-        square.style.background = 'black'
+        square.style.background = colorPicker();
     })
+    gridSizeText.textContent = `Grid Size: ${gridSlider()} x ${gridSlider()}`
 })
 });
 
