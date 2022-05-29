@@ -16,14 +16,14 @@ let divGenerator = function(){
         div = document.createElement('div');
         div.className = 'square'
         div.style.flex = `1 1 ${divWidth}px`
-        div.style.border = '1px solid black'
+        div.style.border = '1px solid #e0e0e0'
         mainArea.appendChild(div);
     }
 }
 
-let test = document.getElementById('size')
+let slider = document.getElementById('size')
 
-test.addEventListener('mouseup', function(){
+slider.addEventListener('mouseup', function(){
     while (mainArea.firstChild) {
         mainArea.removeChild(mainArea.firstChild);
       }
