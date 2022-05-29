@@ -2,8 +2,14 @@
 
 let mainArea = document.querySelector('.main-area');
 
+let gridSlider = function(){
+    x = document.getElementById('size').value;
+    return parseInt(x)
+}
+
+
 let divGenerator = function(){
-    gridSize = parseInt(prompt('Size of your grid?'))
+    gridSize = gridSlider();
     divNumber = gridSize*gridSize
     divWidth = (800/gridSize - 2)
     for (let i = 0; i < divNumber; i++){
@@ -15,18 +21,19 @@ let divGenerator = function(){
     }
 }
 
-divGenerator();
+let test = document.getElementById('size')
 
-let square = document.getElementsByClassName('square')
-
-let squareList = Array.from(square);
-
-let randomColor = function(){
-    return Math.floor(Math.random()*255)
-}
-
-squareList.forEach(square =>{
-    square.addEventListener('mouseover', function(){
+test.addEventListener('mouseup', function(){
+    while (mainArea.firstChild) {
+        mainArea.removeChild(mainArea.firstChild);
+      }
+    divGenerator();
+    let square = document.getElementsByClassName('square')
+    let squareList = Array.from(square);
+    squareList.forEach(square =>{
+        square.addEventListener('mouseover', function(){
         square.style.background = 'black'
     })
 })
+});
+
