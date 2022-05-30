@@ -37,10 +37,16 @@ slider.addEventListener('mouseup', function(){
     let square = document.getElementsByClassName('square')
     let squareList = Array.from(square);
     squareList.forEach(square =>{
-        square.addEventListener('mouseover', function(){
-        square.style.background = colorPicker();
+        square.addEventListener('mouseover', function(e)
+        {
+            if (e.buttons == 1){
+                square.style.background = colorPicker();
+            }
     })
     gridSizeText.textContent = `Grid Size: ${gridSlider()} x ${gridSlider()}`
 })
 });
 
+mainArea.addEventListener('dragstart',(e)=>{
+    e.preventDefault()
+})
