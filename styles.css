@@ -3,18 +3,20 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #F9EBC8;
+    /* background-color: #F9EBC8;
     background: #000428;
     background: -webkit-linear-gradient(to right, #004e92, #000428);
-    background: linear-gradient(to left, #004e92, #000428);
-    height: 99vh;
-    font-family: 'Encode Sans', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(to left, #004e92, #000428); */
+    background-image: url(./images/test-01.svg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Press Start 2P', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main-area{
     display: flex;
-    margin-top: 30px;
-    width: 830px;
+    width: 990px;
     height: 565px;
     background-color: #0000001f;
     border-radius: 12px;
@@ -34,14 +36,16 @@ body{
 .settings-area{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-text-background{
-    background-color: #EDE6DB;
-    border-radius: 6px;
-    font-size: 13px;
-    color: #000c50;
+    /* background-color: #EDE6DB;
+    border-radius: 6px; */
+    background-image: url(./images/grid-size-button.svg);
+    font-size: 0.41rem;
+    color: black;
     height: 50px;
     width: 210px;
     margin-top: 30px;
@@ -51,61 +55,54 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 5px 20px #0000003d;
+    /* box-shadow: 0px 5px 20px #0000003d; */
 }
 
 .slider-bar-background{
-    background-color: #EDE6DB;
-    border-radius: 6px;
+    background-image: url(./images/slider-bg-01.svg); 
     height: 30px;
     margin: 15px;
     width: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 5px 20px #0000003d;
 }
 
 .brush-color-background{
-    background-color: #EDE6DB;
-    color: #000c50;
-    font-size: 13px;
-    border-radius: 6px;
+    background-image: url(./images/brushbutton-01.svg);
+    color: black;
+    font-size: 0.43rem;
     height: 60px;
     width: 210px;
     margin: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 5px 20px #0000003d;
 }
 
 #colorpicked{
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
 }
 
 .header{
-    width: 600px;
+    width: 330px;
     margin-top: 30px;
     margin-left: 15px;
-    margin-bottom: 15px;
     margin-right: 15px;
-    color: #EDE6DB;
-    font-size: 17px;
 }
 
 .footer{
-    font-size: 10px;
-    color:#cacaca;
-    margin: 1.5vw;
+    font-size: 0.5rem;
+    color:#000000;
 }
 
 a{
-    color: #cacaca;
+    color: #e0e1cf;
     text-decoration: none;
     transition: 0.5ms;
 }
 a:visited{
-    color: #cacaca;
+    color:none;
 }
+
