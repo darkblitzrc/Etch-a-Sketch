@@ -37,7 +37,7 @@ body{
 .grid-text-background{
     background-color: #ECE5C7;
     border-radius: 12px;
-    font-size: 1.5vh;
+    font-size: 13px;
     color: #354259;
     height: 50px;
     width: 210px;
@@ -63,7 +63,7 @@ body{
 .brush-color-background{
     background-color: #ECE5C7;
     color: #354259;
-    font-size: 1.5vh;
+    font-size: 13px;
     border-radius: 12px;
     height: 60px;
     width: 210px;
@@ -77,4 +77,21 @@ body{
 #colorpicked{
     display: inline-block;
     margin: 10px;
+}
+
+.header{
+    width: 600px;
+    margin: 20px;
+}
+@media only screen and (max-width:1440px){
+    .header{
+        width: 450px;
+    }
+    .main-area{
+        display: flex;
+        width: 820px;
+        height: 560px;
+        background-color: #C2DED1;
+        border-radius: 12px;
+    }
 }
