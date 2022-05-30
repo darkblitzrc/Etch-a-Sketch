@@ -3,24 +3,28 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(236,229,199,1) 0%, rgb(85, 161, 126) 100%);
-    background-color: #354259;
+    background-color: #F9EBC8;
+    /* background-image: url(./Images/design-space-paper-textured-background.jpg); */
+    /* background-size: cover; */
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to left, #004e92, #000428);
     height: 99vh;
-    font-family: 'Lexend', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Encode Sans', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main-area{
     display: flex;
     width: 830px;
-    height: 600px;
-    background-color: #C2DED1;
+    height: 565px;
+    background-color: #0000001f;
     border-radius: 12px;
 }
 
 .game-area{
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.425);
     display: flex;
     flex-wrap: wrap;
     background-color: white;
@@ -31,17 +35,20 @@ body{
 .settings-area{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .grid-text-background{
-    background-color: #ECE5C7;
-    border-radius: 12px;
+    background-color: #EDE6DB;
+    border-radius: 6px;
     font-size: 13px;
-    color: #354259;
+    color: #000c50;
     height: 50px;
     width: 210px;
-    margin: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,8 +56,8 @@ body{
 }
 
 .slider-bar-background{
-    background-color: #354259;
-    border-radius: 12px;
+    background-color: #EDE6DB;
+    border-radius: 6px;
     height: 30px;
     margin: 15px;
     width: 210px;
@@ -61,10 +68,10 @@ body{
 }
 
 .brush-color-background{
-    background-color: #ECE5C7;
-    color: #354259;
+    background-color: #EDE6DB;
+    color: #000c50;
     font-size: 13px;
-    border-radius: 12px;
+    border-radius: 6px;
     height: 60px;
     width: 210px;
     margin: 15px;
@@ -82,16 +89,22 @@ body{
 .header{
     width: 600px;
     margin: 20px;
+    color: #EDE6DB;
+    text-align: center;
+    font-size: 1.5vw;
 }
-@media only screen and (max-width:1440px){
-    .header{
-        width: 450px;
-    }
-    .main-area{
-        display: flex;
-        width: 820px;
-        height: 560px;
-        background-color: #C2DED1;
-        border-radius: 12px;
-    }
+
+.footer{
+    font-size: 10px;
+    color:#cacaca;
+    margin: 1.5vw;
+}
+
+a{
+    color: #cacaca;
+    text-decoration: none;
+    transition: 0.5ms;
+}
+a:visited{
+    color: #cacaca;
 }
