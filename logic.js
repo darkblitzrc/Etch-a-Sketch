@@ -1,6 +1,6 @@
 /** @type {HTMLElement} */
 
-let mainArea = document.querySelector('.main-area');
+let mainArea = document.querySelector('.game-area');
 
 let gridSlider = function(){
     x = document.getElementById('size').value;
