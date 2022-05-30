@@ -11,15 +11,15 @@ body{
 
 .main-area{
     display: flex;
-    width: 1000px;
-    height: 700px;
+    width: 830px;
+    height: 600px;
     background-color: #C2DED1;
     border-radius: 12px;
 }
 
 .game-area{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -32,15 +32,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
 }
 
 .grid-text-background{
     background-color: #ECE5C7;
     border-radius: 12px;
+    font-size: 1.5vh;
     color: #354259;
-    height: 60px;
-    width: 220px;
+    height: 50px;
+    width: 210px;
     margin: 15px;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ body{
     border-radius: 12px;
     height: 30px;
     margin: 15px;
-    width: 220px;
+    width: 210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,9 +63,10 @@ body{
 .brush-color-background{
     background-color: #ECE5C7;
     color: #354259;
+    font-size: 1.5vh;
     border-radius: 12px;
     height: 60px;
-    width: 220px;
+    width: 210px;
     margin: 15px;
     display: flex;
     align-items: center;
